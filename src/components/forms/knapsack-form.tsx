@@ -77,8 +77,10 @@ export default function KnapsackForm({ setSolution, setIsLoading, isLoading }: K
           const solution = {
               valor_total: result.maximum_value,
               peso_total: totalWeight,
-              items_seleccionados: selectedItems
+              items_seleccionados: selectedItems,
+              interpretation_ia: result.interpretation_ia
           };
+          console.log('aaaa', solution)
           setSolution(solution);
 
       } else {
